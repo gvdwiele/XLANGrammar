@@ -1,0 +1,94 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="92a1dabb-9336-408b-869e-bc1267de31c2" LowerBound="1.1" HigherBound="31.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkSamples" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="721e273d-397f-4a4a-8068-8a7d997faeac" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="30.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ParallelActions" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="ServiceBody" OID="748966db-8e92-45d8-b976-398630831b56" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Parallel" OID="79de1dbe-febb-4451-9102-6bf20a552a84" ParentLink="ServiceBody_Statement" LowerBound="9.1" HigherBound="28.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ParallelActions_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="ParallelBranch" OID="f4ff2e1b-4d33-4579-9b46-f28ebf722a35" ParentLink="ReallyComplexStatement_Branch" LowerBound="14.1" HigherBound="16.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ParallelBranch_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="961bca32-14d2-463d-af34-8d5fcc4a0d7c" ParentLink="ComplexStatement_Statement" LowerBound="14.1" HigherBound="16.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.Trace.WriteLine(&quot;left&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="ParallelBranch" OID="cc183537-36b3-4c3e-98d7-704104a8a70c" ParentLink="ReallyComplexStatement_Branch" LowerBound="19.1" HigherBound="21.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ParallelBranch_2" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="a11903e0-3ad4-41cb-9b77-4ec052c32d6e" ParentLink="ComplexStatement_Statement" LowerBound="19.1" HigherBound="21.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.Trace.WriteLine(&quot;middle&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="ParallelBranch" OID="c9288ea2-1e08-481e-884a-6b5580c5a709" ParentLink="ReallyComplexStatement_Branch" LowerBound="24.1" HigherBound="26.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ParallelBranch_3" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="bedaca59-a612-404f-aafb-b1609a93db08" ParentLink="ComplexStatement_Statement" LowerBound="24.1" HigherBound="26.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.Trace.WriteLine(&quot;right&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_3" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkSamples
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ParallelActions
+    {
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("79de1dbe-febb-4451-9102-6bf20a552a84")]
+            parallel
+            {
+                task
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("961bca32-14d2-463d-af34-8d5fcc4a0d7c")]
+                    System.Diagnostics.Trace.WriteLine("left");
+                }
+                task
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a11903e0-3ad4-41cb-9b77-4ec052c32d6e")]
+                    System.Diagnostics.Trace.WriteLine("middle");
+                }
+                task
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("bedaca59-a612-404f-aafb-b1609a93db08")]
+                    System.Diagnostics.Trace.WriteLine("right");
+                }
+            }
+        }
+    }
+}
+

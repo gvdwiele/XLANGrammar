@@ -1,0 +1,68 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="92a1dabb-9336-408b-869e-bc1267de31c2" LowerBound="1.1" HigherBound="20.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkSamples" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="721e273d-397f-4a4a-8068-8a7d997faeac" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="19.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SuspendTerminate" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="81dc223a-2da7-4f8c-bc87-9839e04ffd0f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="reason" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="748966db-8e92-45d8-b976-398630831b56" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Suspend" OID="f0bceae4-4943-43d1-a91e-4728cd7d8682" ParentLink="ServiceBody_Statement" LowerBound="11.1" HigherBound="13.1">
+                    <om:Property Name="ErrorMessage" Value="System.String.Format(&quot;suspend: {0}&quot;,&quot;reason&quot;);&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Suspend_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Suspend" OID="08a08a40-89c0-4e39-9e7d-455b8a840ea7" ParentLink="ServiceBody_Statement" LowerBound="13.1" HigherBound="15.1">
+                    <om:Property Name="ErrorMessage" Value="&quot;simple string&quot;;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Suspend_2" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Terminate" OID="40cc6c53-9ad5-4963-ab1b-76498594086a" ParentLink="ServiceBody_Statement" LowerBound="15.1" HigherBound="17.1">
+                    <om:Property Name="ErrorMessage" Value="System.String.Format(&quot;terminate: {0}&quot;,&quot;reason&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Terminate_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkSamples
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service SuspendTerminate
+    {
+        System.String reason;
+        body ()
+        {
+            reason = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f0bceae4-4943-43d1-a91e-4728cd7d8682")]
+            suspend System.String.Format("suspend: {0}","reason");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("08a08a40-89c0-4e39-9e7d-455b8a840ea7")]
+            suspend "simple string";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("40cc6c53-9ad5-4963-ab1b-76498594086a")]
+            terminate System.String.Format("terminate: {0}","reason");;
+        }
+    }
+}
+

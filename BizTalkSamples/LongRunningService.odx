@@ -1,0 +1,39 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="92a1dabb-9336-408b-869e-bc1267de31c2" LowerBound="1.1" HigherBound="12.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkSamples" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="721e273d-397f-4a4a-8068-8a7d997faeac" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="LongRunningService" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="LongRunningTransaction" OID="05f89dd3-9c54-46af-a24d-f39deb9251be" ParentLink="ServiceDeclaration_Transaction" LowerBound="5.21" HigherBound="5.64">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TransactionName" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="748966db-8e92-45d8-b976-398630831b56" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkSamples
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction LongRunningService
+    {
+        body ()
+        {
+        }
+    }
+}
+

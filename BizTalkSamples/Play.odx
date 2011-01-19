@@ -1,0 +1,93 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="fd586e46-44f6-411f-9ca8-34dd439b20c4" LowerBound="1.1" HigherBound="32.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkSamples" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="ff38487c-1fd4-4a10-848d-90e799661cd4" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="31.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Play" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="LongRunningTransaction" OID="5ab96b5d-81f7-45bd-986c-23c55f75af6a" ParentLink="ServiceDeclaration_Transaction" LowerBound="5.21" HigherBound="5.50">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="4152a716-8d96-45c4-97d4-52c5167ed162" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Scope" OID="678ee663-94e5-4e03-b409-8c5bec084d00" ParentLink="ServiceBody_Statement" LowerBound="9.1" HigherBound="22.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_2" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableDeclaration" OID="2b0e054c-d336-475a-a248-de491d96c41d" ParentLink="Scope_VariableDeclaration" LowerBound="12.1" HigherBound="13.1">
+                        <om:Property Name="InitialValue" Value="true" />
+                        <om:Property Name="UseDefaultConstructor" Value="False" />
+                        <om:Property Name="Type" Value="System.Boolean" />
+                        <om:Property Name="ParamDirection" Value="In" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Variable_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="LongRunningTransaction" OID="02bba5ae-888a-494a-9822-40cddde1321b" ParentLink="Scope_Transaction" LowerBound="10.18" HigherBound="10.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="While" OID="db4f0cb5-5c4e-4cab-b6d8-49c9d47aad5b" ParentLink="ComplexStatement_Statement" LowerBound="16.1" HigherBound="20.1">
+                        <om:Property Name="Expression" Value="true == true" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Loop_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Scope" OID="9ed53bf6-2c47-4091-83e6-8d55a30508d2" ParentLink="ServiceBody_Statement" LowerBound="22.1" HigherBound="29.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkSamples
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction Play
+    {
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("678ee663-94e5-4e03-b409-8c5bec084d00")]
+            scope longrunning transaction Transaction_2
+            {
+                System.Boolean Variable_1;
+                body
+                {
+                    Variable_1 = true;
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("db4f0cb5-5c4e-4cab-b6d8-49c9d47aad5b")]
+                    while (true == true)
+                    {
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9ed53bf6-2c47-4091-83e6-8d55a30508d2")]
+            scope
+            {
+                body
+                {
+                }
+            }
+        }
+    }
+}
+

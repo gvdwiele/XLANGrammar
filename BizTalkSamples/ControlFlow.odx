@@ -1,0 +1,109 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="27a1cef6-b584-4868-b068-593be791242b" LowerBound="1.1" HigherBound="32.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkSamples" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="cf71676a-9f0c-432b-985d-2f9825c010f5" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="31.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ControlFlow" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="LongRunningTransaction" OID="2b28c3fd-858f-4ad3-8e33-ff29a7069522" ParentLink="ServiceDeclaration_Transaction" LowerBound="5.21" HigherBound="5.57">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="18b8af5a-da53-4ae6-8b2b-db626976163d" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Decision" OID="dee5433f-9bf4-44a8-a3f9-3e77b7152ffe" ParentLink="ServiceBody_Statement" LowerBound="9.1" HigherBound="29.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="DecisionBranch" OID="cc9fb650-6f77-4b24-a4d7-2c6ee3682683" ParentLink="ReallyComplexStatement_Branch" LowerBound="10.13" HigherBound="15.1">
+                        <om:Property Name="Expression" Value="true == true" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Rule_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Call" OID="29daae1a-b773-482b-8ae7-66501e16e9e3" ParentLink="ComplexStatement_Statement" LowerBound="12.1" HigherBound="14.1">
+                            <om:Property Name="Identifier" Value="CallOrchestration_1" />
+                            <om:Property Name="Invokee" Value="BizTalkSamples.AtomicService" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="CallOrchestration_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="75d39b96-5101-429a-8840-f43769456846" ParentLink="ReallyComplexStatement_Branch" LowerBound="15.18" HigherBound="20.1">
+                        <om:Property Name="Expression" Value="true == false" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Rule_2" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Exec" OID="a036027c-6ed6-4629-a773-4c4c59d04b82" ParentLink="ComplexStatement_Statement" LowerBound="17.1" HigherBound="19.1">
+                            <om:Property Name="Invokee" Value="BizTalkSamples.AtomicService" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="StartOrchestration_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="243669ac-5a4e-4f99-9bf2-d41c2274f934" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="While" OID="50b8267a-a065-4ca2-9367-1f123b9211e0" ParentLink="ComplexStatement_Statement" LowerBound="22.1" HigherBound="28.1">
+                            <om:Property Name="Expression" Value="true == true" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Loop_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="f4dbd036-db03-452c-a7ee-ef6ce556221f" ParentLink="ComplexStatement_Statement" LowerBound="25.1" HigherBound="27.1">
+                                <om:Property Name="Expression" Value="System.Diagnostics.Trace.Write(&quot;inside loop&quot;);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Expression_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkSamples
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction ControlFlow
+    {
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dee5433f-9bf4-44a8-a3f9-3e77b7152ffe")]
+            if (true == true)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("29daae1a-b773-482b-8ae7-66501e16e9e3")]
+                call BizTalkSamples.AtomicService () CallOrchestration_1;
+            }
+            else if (true == false)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a036027c-6ed6-4629-a773-4c4c59d04b82")]
+                exec BizTalkSamples.AtomicService ();
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("50b8267a-a065-4ca2-9367-1f123b9211e0")]
+                while (true == true)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f4dbd036-db03-452c-a7ee-ef6ce556221f")]
+                    System.Diagnostics.Trace.Write("inside loop");
+                }
+            }
+        }
+    }
+}
+

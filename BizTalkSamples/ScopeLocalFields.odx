@@ -1,0 +1,161 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="92a1dabb-9336-408b-869e-bc1267de31c2" LowerBound="1.1" HigherBound="44.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkSamples" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="721e273d-397f-4a4a-8068-8a7d997faeac" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="43.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MessageVariable" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="ServiceLinkDeclaration" OID="dc289995-9499-4745-8f36-0bc4ed020817" ParentLink="ServiceDeclaration_ServiceLinkDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="Orientation" Value="Unbound" />
+                <om:Property Name="PortIndex" Value="0" />
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="RoleName" Value="Role_1" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BizTalkSamples.RoleLinkType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RoleLink_1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0022d932-8571-40b6-924d-35ff64adcad6" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="15.1" HigherBound="16.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Variable_1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="194d2791-0be2-4706-be56-5726feeccc67" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="16.1" HigherBound="17.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Text" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="793e4139-259e-4074-ac7b-db52238d4e79" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="17.1" HigherBound="18.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="Microsoft.XLANGs.BaseTypes.Party" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="party" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="CorrelationDeclaration" OID="5a229495-e809-46c5-a1ef-73e20ef2c299" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="Type" Value="BizTalkSamples.CorrelationType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Correlation_1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="fd236343-61f0-401d-97d2-38e21c91c895" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="11.1" HigherBound="12.1">
+                <om:Property Name="Type" Value="BizTalkSamples.Schema1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageVariable4" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="67fa40ef-9c60-4c1a-9a49-7879ca43165a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="12.1" HigherBound="13.1">
+                <om:Property Name="Type" Value="BizTalkSamples.MultipartMessageTypeName" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageVariable3" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="cf5012a8-52ef-4238-8fa7-ba861dddc131" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="13.1" HigherBound="14.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageVariable2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d16b94ef-96f7-4376-8d64-ed9d37ac75b7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageVariable1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="748966db-8e92-45d8-b976-398630831b56" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="VariableAssignment" OID="3e832393-f5b3-478f-8cf2-16ba85c6ba31" ParentLink="ServiceBody_Statement" LowerBound="22.1" HigherBound="41.1">
+                    <om:Property Name="Expression" Value="//property&#xD;&#xA;Text = MessageVariable1(BTS.MessageID);&#xD;&#xA;//custom property&#xD;&#xA;Text = MessageVariable3(BizTalkSamples.Property1);&#xD;&#xA;//part property&#xD;&#xA;Text = MessageVariable3.MessagePart_1(Microsoft.XLANGs.BaseTypes.ContentType);&#xD;&#xA;//string part&#xD;&#xA;Text = MessageVariable3.MessagePart_1;&#xD;&#xA;//part field&#xD;&#xA;Text = MessageVariable3.MessagePart_2.Record.Dist1;&#xD;&#xA;//message field&#xD;&#xA;Text = MessageVariable4.Record.Dist1;&#xD;&#xA;//port property&#xD;&#xA;Text = Port_1(Microsoft.XLANGs.BaseTypes.Address);&#xD;&#xA;//correlation property&#xD;&#xA;Text = Correlation_1(BTS.ReceivePortName);&#xD;&#xA;//rolelink property&#xD;&#xA;party = RoleLink_1(Microsoft.XLANGs.BaseTypes.SourceParty);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="198cd3cb-e1e5-4321-91d3-cd40c54364de" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="8.1" HigherBound="10.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Unbound" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BizTalkSamples.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="213bb407-4573-4eca-98e6-9ccf71bcfd69" ParentLink="PortDeclaration_CLRAttribute" LowerBound="8.1" HigherBound="9.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkSamples
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service MessageVariable
+    {
+        servicelink implements RoleLinkType_1.Role_1 RoleLink_1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_1 Port_1;
+        correlation CorrelationType_1 Correlation_1;
+        message Schema1 MessageVariable4;
+        message MultipartMessageTypeName MessageVariable3;
+        message System.Xml.XmlDocument MessageVariable2;
+        message System.String MessageVariable1;
+        System.Boolean Variable_1;
+        System.String Text;
+        Microsoft.XLANGs.BaseTypes.Party party;
+        body ()
+        {
+            Variable_1 = true;
+            Text = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3e832393-f5b3-478f-8cf2-16ba85c6ba31")]
+            //property
+            Text = MessageVariable1(BTS.MessageID);
+            //custom property
+            Text = MessageVariable3(BizTalkSamples.Property1);
+            //part property
+            Text = MessageVariable3.MessagePart_1(Microsoft.XLANGs.BaseTypes.ContentType);
+            //string part
+            Text = MessageVariable3.MessagePart_1;
+            //part field
+            Text = MessageVariable3.MessagePart_2.Record.Dist1;
+            //message field
+            Text = MessageVariable4.Record.Dist1;
+            //port property
+            Text = Port_1(Microsoft.XLANGs.BaseTypes.Address);
+            //correlation property
+            Text = Correlation_1(BTS.ReceivePortName);
+            //rolelink property
+            party = RoleLink_1(Microsoft.XLANGs.BaseTypes.SourceParty);
+        }
+    }
+}
+

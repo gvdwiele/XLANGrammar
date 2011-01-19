@@ -1,0 +1,244 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="92a1dabb-9336-408b-869e-bc1267de31c2" LowerBound="1.1" HigherBound="46.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkSamples" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="721e273d-397f-4a4a-8068-8a7d997faeac" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="45.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Listen" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="CorrelationDeclaration" OID="eb34026d-5b13-43c9-b22d-a44ccbf3e3c0" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="Type" Value="BizTalkSamples.CorrelationType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Correlation_1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="StatementRef" OID="b4b41ffe-0aa6-47f1-a1bd-53f3511ccd89" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="18.62" HigherBound="18.86">
+                    <om:Property Name="Initializes" Value="True" />
+                    <om:Property Name="Ref" Value="7c0f4220-c345-4aff-b0a1-7471c99af4e2" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="c522e1df-7969-4f54-bc94-2ffda47e2158" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="23.63" HigherBound="23.76">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="e489c975-ade0-47f2-ab20-7a13b142365c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_2" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="eb661764-71fa-4871-a341-0f802d695b2e" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="35.63" HigherBound="35.76">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="885fc598-7e00-4215-a12e-2291c7a20396" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_3" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="CorrelationDeclaration" OID="2c3eb4e9-0bc0-429c-8dc8-d9d99597667e" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="11.1" HigherBound="12.1">
+                <om:Property Name="Type" Value="BizTalkSamples.CorrelationType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Correlation_2" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="StatementRef" OID="5060312a-8dd9-4f30-b475-e683fffd3c85" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="18.88" HigherBound="18.112">
+                    <om:Property Name="Initializes" Value="True" />
+                    <om:Property Name="Ref" Value="7c0f4220-c345-4aff-b0a1-7471c99af4e2" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_4" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="06b4fa51-d34f-47e5-8944-ad18d4c69837" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="23.78" HigherBound="23.91">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="e489c975-ade0-47f2-ab20-7a13b142365c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_5" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="e702dbf5-a43a-401b-9cd2-87f7d4663799" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="35.78" HigherBound="35.91">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="885fc598-7e00-4215-a12e-2291c7a20396" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_6" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9bd74077-4ee0-4e2b-901a-23b362979483" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="12.1" HigherBound="13.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1e7b07de-a53b-4c10-9f0f-19ecc0932e44" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="13.1" HigherBound="14.1">
+                <om:Property Name="Type" Value="BizTalkSamples.Schema1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d2eae758-20f0-4a19-9b2a-2709a51cff86" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="Type" Value="BizTalkSamples.MultipartMessageTypeName" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_3" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="748966db-8e92-45d8-b976-398630831b56" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="7c0f4220-c345-4aff-b0a1-7471c99af4e2" ParentLink="ServiceBody_Statement" LowerBound="17.1" HigherBound="19.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_1" />
+                    <om:Property Name="MessageName" Value="Message_1" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Listen" OID="4bc1630b-1ece-4ba7-9f98-a2f8a36689c7" ParentLink="ServiceBody_Statement" LowerBound="19.1" HigherBound="41.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Listen_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="ListenBranch" OID="f328e403-ace7-4a67-89f4-533e24182004" ParentLink="ReallyComplexStatement_Branch" LowerBound="19.1" HigherBound="19.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ListenBranch_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="84c6b124-ef32-4462-954e-1d31803d1bcb" ParentLink="ComplexStatement_Statement" LowerBound="25.1" HigherBound="27.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.Trace.WriteLine(&quot;listen left&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="e489c975-ade0-47f2-ab20-7a13b142365c" ParentLink="ListenBranch_Statement" LowerBound="22.1" HigherBound="23.92">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_1" />
+                            <om:Property Name="MessageName" Value="Message_3" />
+                            <om:Property Name="OperationName" Value="Operation_2" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="ListenBranch" OID="c7d5547b-f5ae-4ef4-a8be-2f9ea26174c2" ParentLink="ReallyComplexStatement_Branch" LowerBound="19.1" HigherBound="19.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ListenBranch_2" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="0ce53aab-7ad9-4bc5-b7f1-054f5f5bb9fa" ParentLink="ComplexStatement_Statement" LowerBound="31.1" HigherBound="33.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.Trace.WriteLine(&quot;listen middle&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Delay" OID="83775756-58d0-4490-b8d9-c4015b63f4a5" ParentLink="ListenBranch_Statement" LowerBound="28.1" HigherBound="29.53">
+                            <om:Property Name="Timeout" Value="new System.TimeSpan(2,0,0,0)" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Delay_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="ListenBranch" OID="7bb7fd4a-dc46-483f-9666-0e77391cc5da" ParentLink="ReallyComplexStatement_Branch" LowerBound="19.1" HigherBound="19.1">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ListenBranch_3" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="b442e370-4b61-41b4-8ea3-cf6d74b5d66f" ParentLink="ComplexStatement_Statement" LowerBound="37.1" HigherBound="39.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.Trace.WriteLine(&quot;listen right&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="885fc598-7e00-4215-a12e-2291c7a20396" ParentLink="ListenBranch_Statement" LowerBound="34.1" HigherBound="35.92">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_1" />
+                            <om:Property Name="MessageName" Value="Message_2" />
+                            <om:Property Name="OperationName" Value="Operation_3" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Delay" OID="681d19b1-9d2f-4a3d-ac28-212f87d804c4" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="43.1">
+                    <om:Property Name="Timeout" Value="new System.TimeSpan(2,0,0,0);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Delay_2" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="81db81e2-fa0f-46ec-a77b-53bc59b9e2b2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="7.1" HigherBound="10.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="True" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BizTalkSamples.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="1525a9da-8d05-4f66-b596-858dfd39a0b6" ParentLink="PortDeclaration_CLRAttribute" LowerBound="7.1" HigherBound="8.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkSamples
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Listen
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        [Microsoft.XLANGs.BaseTypes.OrderedDelivery()]
+        port implements PortType_1 Port_1;
+        correlation CorrelationType_1 Correlation_1;
+        correlation CorrelationType_1 Correlation_2;
+        message System.Xml.XmlDocument Message_1;
+        message Schema1 Message_2;
+        message MultipartMessageTypeName Message_3;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7c0f4220-c345-4aff-b0a1-7471c99af4e2")]
+            activate receive (Port_1.Operation_1, Message_1, initialize Correlation_1, initialize Correlation_2);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4bc1630b-1ece-4ba7-9f98-a2f8a36689c7")]
+            listen
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e489c975-ade0-47f2-ab20-7a13b142365c")]
+                until receive (Port_1.Operation_2, Message_3, Correlation_1, Correlation_2)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("84c6b124-ef32-4462-954e-1d31803d1bcb")]
+                    System.Diagnostics.Trace.WriteLine("listen left");
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("83775756-58d0-4490-b8d9-c4015b63f4a5")]
+                timeout new System.TimeSpan(2,0,0,0)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0ce53aab-7ad9-4bc5-b7f1-054f5f5bb9fa")]
+                    System.Diagnostics.Trace.WriteLine("listen middle");
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("885fc598-7e00-4215-a12e-2291c7a20396")]
+                until receive (Port_1.Operation_3, Message_2, Correlation_1, Correlation_2)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b442e370-4b61-41b4-8ea3-cf6d74b5d66f")]
+                    System.Diagnostics.Trace.WriteLine("listen right");
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("681d19b1-9d2f-4a3d-ac28-212f87d804c4")]
+            delay new System.TimeSpan(2,0,0,0);
+        }
+    }
+}
+

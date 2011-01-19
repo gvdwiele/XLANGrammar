@@ -1,0 +1,146 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="92a1dabb-9336-408b-869e-bc1267de31c2" LowerBound="1.1" HigherBound="52.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkSamples" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="721e273d-397f-4a4a-8068-8a7d997faeac" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="51.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ThrowingAndCatching" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="LongRunningTransaction" OID="889c8216-db42-4d13-8461-6bd11cb3e190" ParentLink="ServiceDeclaration_Transaction" LowerBound="5.21" HigherBound="5.65">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="748966db-8e92-45d8-b976-398630831b56" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Scope" OID="4e0c801d-6fbc-4bab-9bf7-26b4c8144a1f" ParentLink="ServiceBody_Statement" LowerBound="9.1" HigherBound="33.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableDeclaration" OID="638a8bc1-530e-45fd-9bac-680a29f0b2e7" ParentLink="Scope_VariableDeclaration" LowerBound="12.1" HigherBound="13.1">
+                        <om:Property Name="UseDefaultConstructor" Value="True" />
+                        <om:Property Name="Type" Value="System.Threading.AbandonedMutexException" />
+                        <om:Property Name="ParamDirection" Value="In" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="exception1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="54215590-e158-4e09-b518-2714d7e993d2" ParentLink="ComplexStatement_Statement" LowerBound="16.1" HigherBound="18.1">
+                        <om:Property Name="Expression" Value="exception1 = new System.Threading.AbandonedMutexException();" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Expression_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Throw" OID="b88ebea2-b046-4e3c-bb7b-5a3d2f3c9d9c" ParentLink="ComplexStatement_Statement" LowerBound="18.1" HigherBound="20.1">
+                        <om:Property Name="ThrownReference" Value="exception1" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ThrowException_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="042580ba-ffc5-419e-afbf-18b5660d01da" ParentLink="Scope_Catch" LowerBound="23.1" HigherBound="27.1">
+                        <om:Property Name="ExceptionType" Value="General Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="90995cb2-1f2e-4f11-8062-da82e9aa5d9a" ParentLink="Scope_Catch" LowerBound="27.1" HigherBound="31.1">
+                        <om:Property Name="ExceptionName" Value="fault1" />
+                        <om:Property Name="ExceptionType" Value="System.Threading.AbandonedMutexException" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_2" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Scope" OID="5a6ca9ac-df4e-4838-8abf-3d77e4b50eab" ParentLink="ServiceBody_Statement" LowerBound="33.1" HigherBound="49.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_2" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="LongRunningTransaction" OID="781ed2ce-10ec-481a-803d-96d65dcc69e4" ParentLink="Scope_Transaction" LowerBound="34.18" HigherBound="34.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="f50a3631-2b10-4967-9acc-2479812fc5bc" ParentLink="Scope_Catch" LowerBound="41.1" HigherBound="47.1">
+                        <om:Property Name="ExceptionType" Value="General Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchException_3" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Throw" OID="c21900c9-5d63-4046-a435-08dde93c701e" ParentLink="Catch_Statement" LowerBound="44.1" HigherBound="46.1">
+                            <om:Property Name="ThrownReference" Value="General Exception" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ThrowException_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkSamples
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction ThrowingAndCatching
+    {
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4e0c801d-6fbc-4bab-9bf7-26b4c8144a1f")]
+            scope
+            {
+                System.Threading.AbandonedMutexException exception1;
+                body
+                {
+                    exception1 = new System.Threading.AbandonedMutexException();
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("54215590-e158-4e09-b518-2714d7e993d2")]
+                    exception1 = new System.Threading.AbandonedMutexException();
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b88ebea2-b046-4e3c-bb7b-5a3d2f3c9d9c")]
+                    throw exception1;
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("042580ba-ffc5-419e-afbf-18b5660d01da")]
+                    catch
+                    {
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("90995cb2-1f2e-4f11-8062-da82e9aa5d9a")]
+                    catch (System.Threading.AbandonedMutexException fault1)
+                    {
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("5a6ca9ac-df4e-4838-8abf-3d77e4b50eab")]
+            scope longrunning transaction Transaction_2
+            {
+                body
+                {
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f50a3631-2b10-4967-9acc-2479812fc5bc")]
+                    catch
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c21900c9-5d63-4046-a435-08dde93c701e")]
+                        throw;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,129 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="acd156d8-3a42-4303-9f02-816c4ac45097" LowerBound="1.1" HigherBound="40.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BizTalkSamples" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="a0343a78-5941-4aa6-a10c-a69a51a1dadc" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="39.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="InnerScopes" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="LongRunningTransaction" OID="1c4d8a13-e497-482a-a8d8-670041a6c28e" ParentLink="ServiceDeclaration_Transaction" LowerBound="5.21" HigherBound="5.57">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Transaction_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3f6ec73a-9586-4f3f-839a-8a4387d0f7dd" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="scop1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="871ab5d3-7433-4389-a9e5-2fb10db372c5" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Scope" OID="052223fa-48ab-4299-badc-afa65a82b8dd" ParentLink="ServiceBody_Statement" LowerBound="11.1" HigherBound="37.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableDeclaration" OID="7d35f859-7baf-4287-8aa7-d7323d377419" ParentLink="Scope_VariableDeclaration" LowerBound="14.1" HigherBound="15.1">
+                        <om:Property Name="InitialValue" Value="true" />
+                        <om:Property Name="UseDefaultConstructor" Value="False" />
+                        <om:Property Name="Type" Value="System.Boolean" />
+                        <om:Property Name="ParamDirection" Value="In" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Variable_1" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="LongRunningTransaction" OID="ee440bdf-3baa-4290-b120-1ac49f1899ee" ParentLink="Scope_Transaction" LowerBound="12.18" HigherBound="12.56">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transaction_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Scope" OID="dcfb195f-9cab-40e8-93e9-ac9e323a3b8e" ParentLink="ComplexStatement_Statement" LowerBound="18.1" HigherBound="35.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Scope_2" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableDeclaration" OID="c341c364-c0be-4a7b-aa0f-6a364cdb2082" ParentLink="Scope_VariableDeclaration" LowerBound="22.1" HigherBound="23.1">
+                            <om:Property Name="InitialValue" Value="true" />
+                            <om:Property Name="UseDefaultConstructor" Value="False" />
+                            <om:Property Name="Type" Value="System.Boolean" />
+                            <om:Property Name="ParamDirection" Value="In" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Variable_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="AtomicTransaction" OID="5a320312-5592-406c-a986-c92f8249e825" ParentLink="Scope_Transaction" LowerBound="20.26" HigherBound="20.59">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transaction_3" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Scope" OID="71d3b565-96ec-49b0-8a1c-dc25e7e523ee" ParentLink="ComplexStatement_Statement" LowerBound="26.1" HigherBound="33.1">
+                            <om:Property Name="InitializedTransactionType" Value="True" />
+                            <om:Property Name="IsSynchronized" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Scope_3" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="TransactionAttribute" OID="554a4922-834e-45de-95d9-77a49ab5ec44" ParentLink="Statement_CLRAttribute" LowerBound="19.1" HigherBound="20.1">
+                            <om:Property Name="Batch" Value="True" />
+                            <om:Property Name="Retry" Value="True" />
+                            <om:Property Name="Timeout" Value="60" />
+                            <om:Property Name="Isolation" Value="Serializable" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BizTalkSamples
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service longrunning transaction InnerScopes
+    {
+        System.Boolean scop1;
+        body ()
+        {
+            scop1 = true;
+            scope longrunning transaction Transaction_2
+            {
+                System.Boolean Variable_1;
+                body
+                {
+                    Variable_1 = true;
+                    scope atomic transaction Transaction_3
+                    {
+                        System.Boolean Variable_2;
+                        body
+                        {
+                            Variable_2 = true;
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("71d3b565-96ec-49b0-8a1c-dc25e7e523ee")]
+                            scope
+                            {
+                                body
+                                {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

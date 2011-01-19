@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A280B8D7-3E1C-4063-80B3-09D1C2DCFCF5}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>BizTalkSamples</RootNamespace>
+    <AssemblyName>BizTalkSamples</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="NoShapes.odx">
+      <TypeName>NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="LongRunningService.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="AtomicService.odx">
+      <TypeName>Copy_of_LongRunningService</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="ScopeLocalFields.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schema1.xsd">
+      <TypeName>Schema1</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Play.odx">
+      <TypeName>Play</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Types.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="InnerScopes.odx">
+      <TypeName>InnerScopes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="OrchestrationParams.odx">
+      <TypeName>OrchestrationParams</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="ControlFlow.odx">
+      <TypeName>ControlFlow</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="ParallelActions.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="ReceiveSend.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="SuspendTerminate.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="MessageConstruction.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Transform_1.btm">
+      <TypeName>Transform_1</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Listen.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="ThrowingAndCatching.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Compensation.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Iteration.odx">
+      <TypeName>Iteration</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Operators.odx">
+      <TypeName>Copy_of_NoShapes</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="PropertySchema1.xsd">
+      <TypeName>PropertySchema1</TypeName>
+      <Namespace>BizTalkSamples</Namespace>
+    </Schema>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

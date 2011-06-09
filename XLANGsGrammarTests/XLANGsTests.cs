@@ -94,7 +94,6 @@ namespace XLANGsGrammarTests
             string script = LoadFile("ControlFlow.odx");
             XLANGsGrammar grammar = new XLANGsGrammar();
             var tree = Parse(grammar, script, false);
-
         }
 
         [TestMethod]
